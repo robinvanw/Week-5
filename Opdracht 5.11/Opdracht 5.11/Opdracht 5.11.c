@@ -37,8 +37,6 @@ int checkid(char code[])
 	if (code[12] == 0)					{ geldig[2] = 1; }			//Zijn er niet meer dan 12 characters
 	else								{ geldig[2] = 0; }
 
-	som = code[0];
-
 	for (teller = 1; teller <= 11; teller += 1)
 	{
 		som = som + (code[teller] - 48);							//-48 omdat '0' == 48 in ASCII
